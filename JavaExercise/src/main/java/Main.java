@@ -1,17 +1,20 @@
+package main.java;
+
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.io.*;
 public class Main {
+
     public static void bufferWrite(){
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter("test.txt"));
             out.write("test");
             out.close();
             System.out.println("文件创建成功");
-        }
-        catch (IOException e){
+        } catch (IOException e){
         }
     }
+
     public static void bufferRead(){
         try{
             BufferedReader in = new BufferedReader(new FileReader("test.txt"));
@@ -19,9 +22,10 @@ public class Main {
             while((str=in.readLine())!=null)
                 System.out.println(str);
             System.out.println(str);
-        }catch (IOException e){
+        } catch (IOException e){
         }
     }
+
     public static void createFile(){
         try{
             String fileName = "delFile.txt";
@@ -36,6 +40,7 @@ public class Main {
         catch (Exception e){
         }
     }
+
     public static void delFile(String fileName){
         try{
             File file = new File(fileName);
@@ -47,6 +52,7 @@ public class Main {
         catch (Exception e){
         }
     }
+
     public static void copyContentBuffer(){
         try {
             String srcFile = "srcFile.txt";
@@ -69,6 +75,7 @@ public class Main {
         catch (IOException e){
         }
     }
+
     public static void copyContentByte(){
         try {
             String srcFile = "srcFile.txt";
@@ -94,6 +101,7 @@ public class Main {
         catch (IOException e){
         }
     }
+
     public static void createTmpFile(){
         try {
             File tmpFile = File.createTempFile("pattern", ".txt");
@@ -107,6 +115,7 @@ public class Main {
         catch (IOException e){
         }
     }
+
     public static void changeTime(){
         try{
             File fileToChange = new File("fileToChange.txt");
@@ -122,6 +131,7 @@ public class Main {
         catch (Exception e){
         }
     }
+
     public static void main(String args[]){
 
     }

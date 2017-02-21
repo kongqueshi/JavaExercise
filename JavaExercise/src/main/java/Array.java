@@ -1,3 +1,5 @@
+package main.java;
+
 import java.util.*;
 public class Array {
     private static void printArray(String message, int array[]){

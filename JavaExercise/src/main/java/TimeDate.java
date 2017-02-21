@@ -1,7 +1,11 @@
+package main.java;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
 public class TimeDate {
+
     public static void simpleDate(){
         Date date = new Date();
         String dateFormatStr = "yyyy-MM-dd HH:mm:ss a";
@@ -10,6 +14,7 @@ public class TimeDate {
         dateFormat.applyPattern(dateFormatStr);
         System.out.println(dateFormat.format(date));
     }
+
     public static void calendar(){
         Calendar cal = Calendar.getInstance();
         int year = cal.get(Calendar.YEAR);
